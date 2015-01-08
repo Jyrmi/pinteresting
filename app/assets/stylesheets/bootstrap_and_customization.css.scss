@@ -1,7 +1,21 @@
-$body-bg: #34495e;
-$navbar-inverse-bg: #2c3e50;
-$navbar-inverse-link-color: #ecf0f1;
-$brand-primary: #f39c12;
-$jumbotron-bg: #ecf0f1;
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
+$body-bg:							#34495e;
+$navbar-height:						50px;
+$font-family-sans-serif:			'Poiret One', 'Helvetica Neue' Helvetica, Arial, cursive;
+$navbar-default-bg:					#2c3e50;
+$navbar-default-link-color:			#ecf0f1;
+$navbar-default-brand-color:		#ecf0f1;
+$navbar-default-link-hover-color:	#3498db;
+$brand-primary:						#2980b9;
+$jumbotron-bg:						#ecf0f1;
 
 @import 'bootstrap';
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-weight: bold;
+}

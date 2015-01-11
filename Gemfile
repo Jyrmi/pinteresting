@@ -7,12 +7,14 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'# Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass'
 gem 'devise', '~> 3.4.1'
 gem 'rake', '~> 10.4.2'
 gem 'paperclip', '~> 4.2.1'
 gem 'aws-sdk', '~> 1.60.2'
+gem 'masonry-rails', '~> 0.2.4'
 
 group :development, :test do
 	gem 'sqlite3'

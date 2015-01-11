@@ -1,6 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+require 'paperclip/media_type_spoof_detector'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -22,5 +23,14 @@ module Pinteresting
 
     # required for Heroku
     config.assets.initialize_on_precompile = false
+  end
+end
+
+# workaround for Paperclip's restrictive spoof checking
+module Paperclip
+  class MediaTypeSpoofDetector
+    def spoofed?
+      false
+    end
   end
 end

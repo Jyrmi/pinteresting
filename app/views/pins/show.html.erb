@@ -8,13 +8,14 @@
 		</div>
 
 		<div class="panel panel-body">
-        <p><%= @pin.description %></p>
-		<p><strong><%= @pin.user.email if @pin.user %></strong></p>
+       	<p><strong><%= @pin.description %></strong> - <%= @pin.user.name if @pin.user %></p>
 
 		<% if @pin.user == current_user %>
             <%= link_to edit_pin_path(@pin) do %>
-              <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
               edit
+            <% end %>
+            <%= link_to @pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
+              delete
             <% end %>
 		<% end %>
 		</div>
